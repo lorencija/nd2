@@ -1,7 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  entry: './source/index.ts',
+  entry:{
+    greitoji: path.join(__dirname + '/source/main-greitoji'),
+    vartojama: path.join(__dirname + '/source/main-vartojama.ts'),
+    busto: path.join(__dirname + '/source/main-busto.ts'),
+  },
   devtool: 'source-map',
   module: {
     rules: [
@@ -16,7 +20,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js'
   },
 };
