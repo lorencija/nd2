@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ND2</title>
+</head>
+
+<body>
+    <h1>Būsto paskola</h1>
+    <p>Būsto paskola išduodama daugiausiai 30 - čiai metų. Palūkanos norma - 2%.</p>
+    <h3>Įveskite reikiamą informaciją</h3>
+    <div class="form" id="paskolos" value="busto">
+        <form>
+            <label for="bpaskola">Pakolos dydis: </label> <span id="bpaskolosdydis"></span>
+            <input type="range" min="0" max="600000" step="100" value="50000" class="slider" id="bpaskola">
+                      <br><br>
+            <label for="bterminas">Terminas (mėnesiais): </label> <span id="bterminodydis"></span>
+            <input type="range" min="1" max="30" step="1" value="25" class="slider" id="bterminas">
+            <br><br>
+            <label for="balga">Mėnesinis atlyginimas (neto): </label><span id="balgosdydis"></span>
+            <input type="range" min="300" max="30000" step="50" value="1000" class="slider" id="balga">
+                       <br><br>
+            <label for="bvaikai">Vaiku skaičius: </label><span id="bvaikuskaicius"></span>
+            <input type="range" min="0" max="12" step="1" value="0" class="slider" id="bvaikai">
+           
+            <br><br>
+            <input type="button" class="mygtukas" value="Skaičiuoti" id="skaiciuoti">
+            <p><span id="brezultatai"></span></p>
+        </form>
+    </div>
+    <div class="back">
+        <a href="index.html">Atgal</a>
+    </div>
+    <script src="dist/bundle.js"></script>
+
+</body>
+
+</html>

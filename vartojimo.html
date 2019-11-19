@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ND2</title>
+</head>
+
+<body>
+    <h1>Vartojimo paskola</h1>
+    <p>Paskolos maksimali galima suma - 10 000 Eur. Maksimalus ternimas 5 metai.</p>
+    <h3>Įveskite reikiamą informaciją</h3>
+    <div class="form" id="paskolos" value="vartojama">
+        <form>
+            <label for="vpaskola">Pakolos dydis: </label>
+            <input type="range" min="0" max="10000" step="100" value="1000" class="slider" id="vpaskola">
+            <p><span id="vpaskolosdydis"></span></p>
+            <br><br>
+            <label for="vterminas">Terminas (metais): </label>
+            <input type="range" min="1" max="5" step="1" value="1" class="slider" id="vterminas">
+            <p><span id="vterminodydis"></span></p>
+            <select id="daigtas">
+                <option value="dviratis" selected="selected">Dviratis</option>
+                <option value="masina">Mašina</option>
+                <option value="remontas">Remontui</option>
+                <option value="kita">Kita</option>
+            </select>
+            <input type="button" class="mygtukas" value="Skaičiuoti" id="skaiciuoti">
+            <p><span id="vrezultatai"></span></p>
+        </form>
+    </div>
+    <div class="back">
+        <a href="index.html">Atgal</a>
+    </div>
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ND2</title>
+</head>
+
+<body>
+    <h1>Greitoji paskola</h1>
+    <p>Paskolos maksimali galima suma - 5000 Eur. Maksimalus ternimas 24 mėnesiai. Palūkanų norma 20%.</p>
+
+    <h3>Pasirinkite reikiamą informaciją</h3>
+    <div class="form" id="paskolos" value="greitoji">
+        <form>
+            <label for="gpaskola">Pakolos dydis: </label>
+            <input type="range" min="0" max="5000" step="50" value="1000" class="slider" id="gpaskola">
+            <p><span id="gpaskolosdydis"></span></p>
+            <br><br>
+            <label for="gterminas">Terminas (mėnesiais): </label>
+            <input type="range" min="1" max="24" step="1" value="12" class="slider" id="gterminas">
+            <p><span id="gterminodydis"></span></p>
+            <input type="button" class="mygtukas" value="Skaičiuoti" id="skaiciuoti">
+            <p><span id="grezultatai"></span></p>
+        </form>
+    </div>
+    <div  class="back">
+            <a href="index.html">Atgal</a>
+    </div>
+
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
